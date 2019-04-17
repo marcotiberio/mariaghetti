@@ -1,0 +1,1271 @@
+/* BODY - START */
+
+body {
+	background-image: url("images/windows_wallpaper.png");
+	background-size: cover;
+  background-repeat: no-repeat;
+	overflow: hidden;
+	font-family: Tahoma, Verdana, sans-serif;
+}
+
+/* BODY - END */
+
+
+/* DESKTOP - START */
+
+/* DESKTOP ICONS - START */
+
+#notepad-works {
+  clear: left;
+  width: 4.5%;
+  padding: 20px 20px;
+  float: left;
+  cursor: pointer;
+}
+
+#folder-photos {
+	clear: left;
+	width: 4.5%;
+	padding: 20px 20px;
+	float: left;
+	cursor: pointer;
+}
+
+#folder-works {
+	clear: left;
+	width: 5.8%;
+	padding: 15px 12px;
+	float: left;
+	cursor: pointer;
+}
+
+#pdf {
+  clear: left;
+  width: 5%;
+  padding: 20px 20px;
+  float: left;
+  cursor: pointer;
+}
+
+#notepad-about {
+  clear: left;
+  width: 6%;
+  padding: 20px 20px;
+  float: left;
+  cursor: pointer;
+}
+
+#folder-folder {
+	clear: left;
+	width: 10%;
+	padding: 20px 20px;
+	cursor: pointer;
+	text-align: center;
+}
+
+#folder-people {
+	clear: left;
+	width: 10%;
+	padding: 20px 20px;
+	cursor: pointer;
+	text-align: center;
+}
+
+#folder-type {
+	clear: left;
+	width: 10%;
+	padding: 20px 20px;
+	cursor: pointer;
+	text-align: center;
+}
+
+#folder-variations {
+	clear: left;
+	width: 10%;
+	padding: 20px 20px;
+	cursor: pointer;
+	text-align: center;
+}
+
+.image-portfolio {
+  width: 21%;
+	float: left;
+	margin: 1.66%;
+	cursor: pointer;
+}
+
+#link-works:hover {
+  text-decoration: underline;
+}
+
+/* DESKTOP ICONS - END */
+
+/* NOTEPAD WORKS - START */
+
+.modal-notepad-works {
+  display: none;
+  position: fixed;
+  top: 40px;
+  bottom: 0;
+  left: 600px;
+  right: 0;
+  align-items: center;
+  justify-content: center;
+  overflow-y: auto;
+}
+
+.modal-block-notepad-works {
+  position: fixed;
+  top: 40px;
+  background: white;
+  width: 100%;
+  max-width: 600px;
+  height: 500px;
+  cursor: auto;
+  border-top: 5px solid #4094ff;
+  border-bottom: 5px solid #16428b;
+  background-image: -webkit-gradient(linear, 10 10, 10 100%, from(#16428b), to(#16428b));
+  background-image: -webkit-linear-gradient(#16428b, #16428b);
+  background-image:
+      -moz-linear-gradient(#16428b, #16428b),
+      -moz-linear-gradient(#16428b, #16428b)
+  ;
+  background-image:
+      -o-linear-gradient(#16428b, #16428b),
+      -o-linear-gradient(#16428b, #16428b)
+  ;
+  background-image: 
+      linear-gradient(#16428b, #16428b),
+      linear-gradient(#16428b, #16428b)
+  ;
+  -moz-background-size:5px 100%;
+  background-size:5px 100%;
+  background-position:0 0, 100% 0;
+  background-repeat:no-repeat;
+  border-radius: 5px;
+}
+
+.modal-header-notepad-works {
+  font-size: 16px;
+  top: 0;
+  height: 25px;
+  padding: 7px;
+  color: white;
+  background: linear-gradient(to bottom, #4094ff 0%, #0056e4 13%, #0056e4 71%, #16428b 100%);
+}
+
+.modal-second-header-notepad-works {
+  position: absolute;
+  background-color: #ece9d8;
+  height: 15px;
+  width: 96.3%;
+  left: 5px;
+  top: 35px;
+  z-index: 10;
+  padding: 6px;
+  font-size: 12px;
+}
+  
+.modal-close-notepad-works {
+  position: absolute;
+  top: 6px;
+  right: 5px;
+  border: 1px solid white;
+  border-radius: 3px;
+  font-size: 12px;
+  font-weight: bold;
+  background: red;
+  color: white;
+  padding: 3px 7px ;
+  cursor: pointer;
+}
+
+.modal-window-notepad-works {
+  position: absolute;
+  top: 6px;
+  right: 31.5px;
+  border: 1px solid white;
+  border-radius: 3px;
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+  padding: 1px 5px 1px 5px;
+  cursor: default;
+  background: linear-gradient(to bottom, #4094ff 0%, #0056e4 13%, #0056e4 71%, #16428b 100%);
+}
+
+.modal-trait-notepad-works {
+  position: absolute;
+  top: 6px;
+  right: 58px;
+  border: 1px solid white;
+  border-radius: 3px;
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+  padding: 3px 9px 3px 5px;
+  cursor: default;
+  background: linear-gradient(to bottom, #4094ff 0%, #0056e4 13%, #0056e4 71%, #16428b 100%);
+}
+
+  
+&.open {
+    display: flex;
+}
+
+
+.modal-notepad-works {
+  cursor: pointer;
+  
+  &.open .modal-block {
+    -webkit-animation: fadeIn 0.5s;
+  }
+}
+
+.list-works {
+  padding: 20px 20px;
+  word-wrap: break-word;
+  text-align: justify;
+  text-justify: inter-word;
+  font-family: "Courier New", Courier, monospace;
+}
+
+/* NOTEPAD WORKS - END */
+
+/* PHOTOS FOLDER - START */
+
+.modal-photos {
+  display: none;
+  position: fixed;
+  top: 30px;
+  bottom: 0;
+  left: 200px;
+  right: 0;
+  align-items: center;
+  justify-content: center;
+  overflow-y: auto;
+}
+
+.modal-block-photos {
+  position: relative;
+  background: white;
+  width: 100%;
+  max-width: 700px;
+  height: 500px;
+  cursor: auto;
+  border-top: 5px solid #4094ff;
+  border-bottom: 5px solid #16428b;
+  background-image: -webkit-gradient(linear, 10 10, 10 100%, from(#16428b), to(#16428b));
+  background-image: -webkit-linear-gradient(#16428b, #16428b);
+  background-image:
+      -moz-linear-gradient(#16428b, #16428b),
+      -moz-linear-gradient(#16428b, #16428b)
+  ;
+  background-image:
+      -o-linear-gradient(#16428b, #16428b),
+      -o-linear-gradient(#16428b, #16428b)
+  ;
+  background-image: 
+      linear-gradient(#16428b, #16428b),
+      linear-gradient(#16428b, #16428b)
+  ;
+  -moz-background-size:5px 100%;
+  background-size:5px 100%;
+  background-position:0 0, 100% 0;
+  background-repeat:no-repeat;
+  border-radius: 5px;
+}
+
+.modal-header-photos {
+  font-size: 16px;
+  top: 0;
+  height: 25px;
+  padding: 7px;
+  color: white;
+  background: linear-gradient(to bottom, #4094ff 0%, #0056e4 13%, #0056e4 71%, #16428b 100%);
+}
+
+.modal-second-header-notepad-defrost {
+  position: absolute;
+  background-color: #ece9d8;
+  height: 15px;
+  width: 96.9%;
+  left: 5px;
+  top: 35px;
+  z-index: 10;
+  padding: 6px;
+  font-size: 12px;
+}
+
+.modal-close-photos {
+  position: absolute;
+  top: 6px;
+  right: 5px;
+  border: 1px solid white;
+  border-radius: 3px;
+  font-size: 12px;
+  font-weight: bold;
+  background: red;
+  color: white;
+  padding: 3px 7px ;
+  cursor: pointer;
+}
+
+.modal-window-photos {
+  position: absolute;
+  top: 6px;
+  right: 31.5px;
+  border: 1px solid white;
+  border-radius: 3px;
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+  padding: 1px 5px 1px 5px;
+  cursor: default;
+  background: linear-gradient(to bottom, #4094ff 0%, #0056e4 13%, #0056e4 71%, #16428b 100%);
+}
+
+.modal-trait-photos {
+  position: absolute;
+  top: 6px;
+  right: 58px;
+  border: 1px solid white;
+  border-radius: 3px;
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+  padding: 3px 9px 3px 5px;
+  cursor: default;
+  background: linear-gradient(to bottom, #4094ff 0%, #0056e4 13%, #0056e4 71%, #16428b 100%);
+}
+
+  
+&.open {
+    display: flex;
+}
+
+
+.modal-photos {
+  cursor: pointer;
+  
+  &.open .modal-block {
+    -webkit-animation: fadeIn 0.5s;
+  }
+}
+
+.image-folder {
+  width: 55px;
+  width: 15%;
+	float: left;
+	margin: 1.66%;
+}
+
+/* PHOTOS FOLDER - END */
+
+/* WORKS FOLDER - START */
+
+.modal-works {
+  display: none;
+  position: fixed;
+  top: 30px;
+  bottom: 0;
+  left: 200px;
+  right: 0;
+  align-items: center;
+  justify-content: center;
+  overflow-y: auto;
+}
+
+.modal-block-works {
+  position: relative;
+  background: white;
+  width: 100%;
+  max-width: 700px;
+  height: 500px;
+  cursor: auto;
+  border-top: 5px solid #4094ff;
+  border-bottom: 5px solid #16428b;
+  background-image: -webkit-gradient(linear, 10 10, 10 100%, from(#16428b), to(#16428b));
+  background-image: -webkit-linear-gradient(#16428b, #16428b);
+  background-image:
+      -moz-linear-gradient(#16428b, #16428b),
+      -moz-linear-gradient(#16428b, #16428b)
+  ;
+  background-image:
+      -o-linear-gradient(#16428b, #16428b),
+      -o-linear-gradient(#16428b, #16428b)
+  ;
+  background-image: 
+      linear-gradient(#16428b, #16428b),
+      linear-gradient(#16428b, #16428b)
+  ;
+  -moz-background-size:5px 100%;
+  background-size:5px 100%;
+  background-position:0 0, 100% 0;
+  background-repeat:no-repeat;
+  border-radius: 5px;
+}
+
+.modal-header-works {
+  font-size: 16px;
+  top: 0;
+  height: 25px;
+  padding: 7px;
+  color: white;
+  background: linear-gradient(to bottom, #4094ff 0%, #0056e4 13%, #0056e4 71%, #16428b 100%);
+}
+  
+.modal-close-works {
+  position: absolute;
+  top: 6px;
+  right: 5px;
+  border: 1px solid white;
+  border-radius: 3px;
+  font-size: 12px;
+  font-weight: bold;
+  background: red;
+  color: white;
+  padding: 3px 7px ;
+  cursor: pointer;
+}
+
+.modal-window-works {
+  position: absolute;
+  top: 6px;
+  right: 31.5px;
+  border: 1px solid white;
+  border-radius: 3px;
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+  padding: 1px 5px 1px 5px;
+  cursor: default;
+  background: linear-gradient(to bottom, #4094ff 0%, #0056e4 13%, #0056e4 71%, #16428b 100%);
+}
+
+.modal-trait-works {
+  position: absolute;
+  top: 6px;
+  right: 58px;
+  border: 1px solid white;
+  border-radius: 3px;
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+  padding: 3px 9px 3px 5px;
+  cursor: default;
+  background: linear-gradient(to bottom, #4094ff 0%, #0056e4 13%, #0056e4 71%, #16428b 100%);
+}
+
+  
+&.open {
+    display: flex;
+}
+
+
+.modal-works {
+  cursor: pointer;
+  
+  &.open .modal-block {
+    -webkit-animation: fadeIn 0.5s;
+  }
+}
+
+.image-folder {
+  width: 55px;
+  width: 15%;
+	float: left;
+	margin: 1.66%;
+}
+
+/* WORKS FOLDER - END */
+
+/* WORKS PEOPLE - START */
+
+.modal-works-people {
+  display: none;
+  position: fixed;
+  top: 50px;
+  bottom: 0;
+  left: 400px;
+  right: 0;
+  align-items: center;
+  justify-content: center;
+  overflow-y: auto;
+}
+
+.modal-block-works-people {
+  position: relative;
+  background: white;
+  width: 100%;
+  max-width: 700px;
+  height: 500px;
+  cursor: auto;
+  border-top: 5px solid #4094ff;
+  border-bottom: 5px solid #16428b;
+  background-image: -webkit-gradient(linear, 10 10, 10 100%, from(#16428b), to(#16428b));
+  background-image: -webkit-linear-gradient(#16428b, #16428b);
+  background-image:
+      -moz-linear-gradient(#16428b, #16428b),
+      -moz-linear-gradient(#16428b, #16428b)
+  ;
+  background-image:
+      -o-linear-gradient(#16428b, #16428b),
+      -o-linear-gradient(#16428b, #16428b)
+  ;
+  background-image: 
+      linear-gradient(#16428b, #16428b),
+      linear-gradient(#16428b, #16428b)
+  ;
+  -moz-background-size:5px 100%;
+  background-size:5px 100%;
+  background-position:0 0, 100% 0;
+  background-repeat:no-repeat;
+  border-radius: 5px;
+}
+
+.modal-header-works-people {
+  font-size: 16px;
+  top: 0;
+  height: 25px;
+  padding: 7px;
+  color: white;
+  background: linear-gradient(to bottom, #4094ff 0%, #0056e4 13%, #0056e4 71%, #16428b 100%);
+}
+  
+.modal-close-works-people {
+  position: absolute;
+  top: 6px;
+  right: 5px;
+  border: 1px solid white;
+  border-radius: 3px;
+  font-size: 12px;
+  font-weight: bold;
+  background: red;
+  color: white;
+  padding: 3px 7px ;
+  cursor: pointer;
+}
+
+.modal-window-works-people {
+  position: absolute;
+  top: 6px;
+  right: 31.5px;
+  border: 1px solid white;
+  border-radius: 3px;
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+  padding: 1px 5px 1px 5px;
+  cursor: default;
+  background: linear-gradient(to bottom, #4094ff 0%, #0056e4 13%, #0056e4 71%, #16428b 100%);
+}
+
+.modal-trait-works-people {
+  position: absolute;
+  top: 6px;
+  right: 58px;
+  border: 1px solid white;
+  border-radius: 3px;
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+  padding: 3px 9px 3px 5px;
+  cursor: default;
+  background: linear-gradient(to bottom, #4094ff 0%, #0056e4 13%, #0056e4 71%, #16428b 100%);
+}
+
+  
+&.open {
+    display: flex;
+}
+
+
+.modal-works {
+  cursor: pointer;
+  
+  &.open .modal-block {
+    -webkit-animation: fadeIn 0.5s;
+  }
+}
+
+.image-folder {
+  width: 55px;
+  width: 15%;
+	float: left;
+	margin: 1.66%;
+}
+
+/* WORKS PEOPLE - END */
+
+/* WORKS TYPE - START */
+
+.modal-works-type {
+  display: none;
+  position: fixed;
+  top: 70px;
+  bottom: 0;
+  left: 700px;
+  right: 0;
+  align-items: center;
+  justify-content: center;
+  overflow-y: auto;
+}
+
+.modal-block-works-type {
+  position: relative;
+  background: white;
+  width: 100%;
+  max-width: 700px;
+  height: 500px;
+  cursor: auto;
+  border-top: 5px solid #4094ff;
+  border-bottom: 5px solid #16428b;
+  background-image: -webkit-gradient(linear, 10 10, 10 100%, from(#16428b), to(#16428b));
+  background-image: -webkit-linear-gradient(#16428b, #16428b);
+  background-image:
+      -moz-linear-gradient(#16428b, #16428b),
+      -moz-linear-gradient(#16428b, #16428b)
+  ;
+  background-image:
+      -o-linear-gradient(#16428b, #16428b),
+      -o-linear-gradient(#16428b, #16428b)
+  ;
+  background-image: 
+      linear-gradient(#16428b, #16428b),
+      linear-gradient(#16428b, #16428b)
+  ;
+  -moz-background-size:5px 100%;
+  background-size:5px 100%;
+  background-position:0 0, 100% 0;
+  background-repeat:no-repeat;
+  border-radius: 5px;
+}
+
+.modal-header-works-type {
+  font-size: 16px;
+  top: 0;
+  height: 25px;
+  padding: 7px;
+  color: white;
+  background: linear-gradient(to bottom, #4094ff 0%, #0056e4 13%, #0056e4 71%, #16428b 100%);
+}
+  
+.modal-close-works-type {
+  position: absolute;
+  top: 6px;
+  right: 5px;
+  border: 1px solid white;
+  border-radius: 3px;
+  font-size: 12px;
+  font-weight: bold;
+  background: red;
+  color: white;
+  padding: 3px 7px ;
+  cursor: pointer;
+}
+
+.modal-window-works-type {
+  position: absolute;
+  top: 6px;
+  right: 31.5px;
+  border: 1px solid white;
+  border-radius: 3px;
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+  padding: 1px 5px 1px 5px;
+  cursor: default;
+  background: linear-gradient(to bottom, #4094ff 0%, #0056e4 13%, #0056e4 71%, #16428b 100%);
+}
+
+.modal-trait-works-type {
+  position: absolute;
+  top: 6px;
+  right: 58px;
+  border: 1px solid white;
+  border-radius: 3px;
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+  padding: 3px 9px 3px 5px;
+  cursor: default;
+  background: linear-gradient(to bottom, #4094ff 0%, #0056e4 13%, #0056e4 71%, #16428b 100%);
+}
+
+  
+&.open {
+    display: flex;
+}
+
+
+.modal-works {
+  cursor: pointer;
+  
+  &.open .modal-block {
+    -webkit-animation: fadeIn 0.5s;
+  }
+}
+
+.image-folder {
+  width: 55px;
+  width: 15%;
+	float: left;
+	margin: 1.66%;
+}
+
+/* WORKS TYPE - END */
+
+/* WORKS VARIATIONS - START */
+
+.modal-works-variations {
+  display: none;
+  position: fixed;
+  top: 800px;
+  bottom: 0;
+  left: 400px;
+  right: 0;
+  align-items: center;
+  justify-content: center;
+  overflow-y: auto;
+}
+
+.modal-block-works-variations {
+  position: relative;
+  background: white;
+  width: 100%;
+  max-width: 700px;
+  height: 500px;
+  cursor: auto;
+  border-top: 5px solid #4094ff;
+  border-bottom: 5px solid #16428b;
+  background-image: -webkit-gradient(linear, 10 10, 10 100%, from(#16428b), to(#16428b));
+  background-image: -webkit-linear-gradient(#16428b, #16428b);
+  background-image:
+      -moz-linear-gradient(#16428b, #16428b),
+      -moz-linear-gradient(#16428b, #16428b)
+  ;
+  background-image:
+      -o-linear-gradient(#16428b, #16428b),
+      -o-linear-gradient(#16428b, #16428b)
+  ;
+  background-image: 
+      linear-gradient(#16428b, #16428b),
+      linear-gradient(#16428b, #16428b)
+  ;
+  -moz-background-size:5px 100%;
+  background-size:5px 100%;
+  background-position:0 0, 100% 0;
+  background-repeat:no-repeat;
+  border-radius: 5px;
+}
+
+.modal-header-works-variations {
+  font-size: 16px;
+  top: 0;
+  height: 25px;
+  padding: 7px;
+  color: white;
+  background: linear-gradient(to bottom, #4094ff 0%, #0056e4 13%, #0056e4 71%, #16428b 100%);
+}
+  
+.modal-close-works-variations {
+  position: absolute;
+  top: 6px;
+  right: 5px;
+  border: 1px solid white;
+  border-radius: 3px;
+  font-size: 12px;
+  font-weight: bold;
+  background: red;
+  color: white;
+  padding: 3px 7px ;
+  cursor: pointer;
+}
+
+.modal-window-works-variations {
+  position: absolute;
+  top: 6px;
+  right: 31.5px;
+  border: 1px solid white;
+  border-radius: 3px;
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+  padding: 1px 5px 1px 5px;
+  cursor: default;
+  background: linear-gradient(to bottom, #4094ff 0%, #0056e4 13%, #0056e4 71%, #16428b 100%);
+}
+
+.modal-trait-works-variations {
+  position: absolute;
+  top: 6px;
+  right: 58px;
+  border: 1px solid white;
+  border-radius: 3px;
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+  padding: 3px 9px 3px 5px;
+  cursor: default;
+  background: linear-gradient(to bottom, #4094ff 0%, #0056e4 13%, #0056e4 71%, #16428b 100%);
+}
+
+  
+&.open {
+    display: flex;
+}
+
+
+.modal-works {
+  cursor: pointer;
+  
+  &.open .modal-block {
+    -webkit-animation: fadeIn 0.5s;
+  }
+}
+
+.image-folder {
+  width: 55px;
+  width: 15%;
+	float: left;
+	margin: 1.66%;
+}
+
+/* WORKS VARIATIONS - END */
+
+.modal3 {
+  display: none;
+  position: fixed;
+  top: 20px;
+  bottom: 0;
+  left: 400px;
+  right: 0;
+  align-items: center;
+  justify-content: center;
+  overflow-y: auto;
+}
+
+.modal-block3 {
+  position: fixed;
+  top: 5px;
+  background: #eef2fb;
+  width: 100%;
+  max-width: 600px;
+  height: 650px;
+  cursor: auto;
+  border: 3px #4094ff solid;
+  border-radius: 5px;
+  background-image: -webkit-gradient(linear, 10 10, 10 100%, from(#16428b), to(#16428b));
+  background-image: -webkit-linear-gradient(#16428b, #16428b);
+  background-image:
+      -moz-linear-gradient(#16428b, #16428b),
+      -moz-linear-gradient(#16428b, #16428b)
+  ;
+  background-image:
+      -o-linear-gradient(#16428b, #16428b),
+      -o-linear-gradient(#16428b, #16428b)
+  ;
+  background-image: 
+      linear-gradient(#16428b, #16428b),
+      linear-gradient(#16428b, #16428b)
+  ;
+  -moz-background-size:5px 100%;
+  background-size:5px 100%;
+  background-position:0 0, 100% 0;
+  background-repeat:no-repeat;
+  border-radius: 5px;
+}
+
+.modal-header3 {
+  font-size: 16px;
+  top: 0;
+  height: 25px;
+  padding: 7px;
+  color: white;
+  border-bottom: 1px solid #ddd;
+  background: linear-gradient(to bottom, #4094ff 0%, #0056e4 13%, #0056e4 71%, #16428b 100%);
+}
+  
+.modal-close3 {
+  position: absolute;
+  top: 6px;
+  right: 5px;
+  border: 1px solid white;
+  border-radius: 3px;
+  font-size: 12px;
+  font-weight: bold;
+  background: red;
+  color: white;
+  padding: 3px 7px ;
+  cursor: pointer;
+}
+
+.modal-window3 {
+  position: absolute;
+  top: 6px;
+  right: 31px;
+  border: 1px solid white;
+  border-radius: 3px;
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+  padding: 3px 5px 1px 5px;
+  cursor: default;
+  background: linear-gradient(to bottom, #4094ff 0%, #0056e4 13%, #0056e4 71%, #16428b 100%);
+}
+
+.modal-trait3 {
+  position: absolute;
+  top: 6px;
+  right: 58px;
+  border: 1px solid white;
+  border-radius: 3px;
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+  padding: 3px 9px 3px 5px;
+  cursor: default;
+  background: linear-gradient(to bottom, #4094ff 0%, #0056e4 13%, #0056e4 71%, #16428b 100%);
+}
+
+.modal-footer3 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+}
+
+  
+&.open {
+    display: flex;
+}
+
+
+.modal3 {
+  cursor: pointer;
+  
+  &.open .modal-block {
+    -webkit-animation: fadeIn 0.5s;
+  }
+}
+
+.resumepdf {
+  width: 400px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* NOTEPAD ABOUT - START */
+
+.modal-notepad-about {
+  display: none;
+  position: fixed;
+  top: 10px;
+  bottom: 0;
+  left: 400px;
+  right: 0;
+  align-items: center;
+  justify-content: center;
+  overflow-y: auto;
+}
+
+.modal-block-notepad-about {
+  position: fixed;
+  top: 5px;
+  background: white;
+  width: 100%;
+  max-width: 600px;
+  height: 500px;
+  cursor: auto;
+  border-top: 5px solid #4094ff;
+  border-bottom: 5px solid #16428b;
+  background-image: -webkit-gradient(linear, 10 10, 10 100%, from(#16428b), to(#16428b));
+  background-image: -webkit-linear-gradient(#16428b, #16428b);
+  background-image:
+      -moz-linear-gradient(#16428b, #16428b),
+      -moz-linear-gradient(#16428b, #16428b)
+  ;
+  background-image:
+      -o-linear-gradient(#16428b, #16428b),
+      -o-linear-gradient(#16428b, #16428b)
+  ;
+  background-image: 
+      linear-gradient(#16428b, #16428b),
+      linear-gradient(#16428b, #16428b)
+  ;
+  -moz-background-size:5px 100%;
+  background-size:5px 100%;
+  background-position:0 0, 100% 0;
+  background-repeat:no-repeat;
+  border-radius: 5px;
+}
+
+.modal-header-notepad-about {
+  font-size: 16px;
+  top: 0;
+  height: 25px;
+  padding: 7px;
+  color: white;
+  background: linear-gradient(to bottom, #4094ff 0%, #0056e4 13%, #0056e4 71%, #16428b 100%);
+}
+
+.modal-second-header-notepad-about {
+  position: absolute;
+  background-color: #ece9d8;
+  height: 15px;
+  width: 96.3%;
+  left: 5px;
+  top: 35px;
+  z-index: 10;
+  padding: 6px;
+  font-size: 12px;
+}
+  
+.modal-close-notepad-about {
+  position: absolute;
+  top: 6px;
+  right: 5px;
+  border: 1px solid white;
+  border-radius: 3px;
+  font-size: 12px;
+  font-weight: bold;
+  background: red;
+  color: white;
+  padding: 3px 7px ;
+  cursor: pointer;
+}
+
+.modal-window-notepad-about {
+  position: absolute;
+  top: 6px;
+  right: 31.5px;
+  border: 1px solid white;
+  border-radius: 3px;
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+  padding: 1px 5px 1px 5px;
+  cursor: default;
+  background: linear-gradient(to bottom, #4094ff 0%, #0056e4 13%, #0056e4 71%, #16428b 100%);
+}
+
+.modal-trait-notepad-about {
+  position: absolute;
+  top: 6px;
+  right: 58px;
+  border: 1px solid white;
+  border-radius: 3px;
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+  padding: 3px 9px 3px 5px;
+  cursor: default;
+  background: linear-gradient(to bottom, #4094ff 0%, #0056e4 13%, #0056e4 71%, #16428b 100%);
+}
+
+.modal-footer-notepad-about {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+}
+
+  
+&.open {
+    display: flex;
+}
+
+
+.modal-notepad-about {
+  cursor: pointer;
+  
+  &.open .modal-block {
+    -webkit-animation: fadeIn 0.5s;
+  }
+}
+
+.about {
+  padding: 20px 20px;
+  word-wrap: break-word;
+  text-align: justify;
+  text-justify: inter-word;
+  font-family: "Courier New", Courier, monospace;
+}
+
+/* NOTEPAD ABOUT - END */
+
+/* DESKTOP - END */
+
+
+/* FOOTER BAR SECTION - START */
+
+.footer-xp-bar {
+  	position: fixed;
+  	padding: 20px;
+  	left: 0;
+  	right: 0;
+  	bottom: 0;
+  	height: 3px;
+  	border-radius: 1px;
+  	background: linear-gradient(#225cd9 0%, #225cd9 97%);
+  	box-shadow: inset 0px 3px 3px rgba(255, 255, 255, 0.5);
+  	z-index: 1;
+}
+
+#start-button {
+  position: absolute;
+  background-color: #4CAF50;
+  width: 100px;
+  left: 0;
+  bottom: 0;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 25px;
+  padding-right: 30px;
+  color: white;
+  font-size: 25px;
+  font-style: italic;
+  border: none;
+  border-radius: 0 15px 15px 0;
+  background: linear-gradient(#1a9322 0%, #1a9322 97%);
+  box-shadow: inset 0px 3px 3px rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+}
+
+.winxp-logo {
+  display: inline-block;
+  width: 30px;
+  float: left;
+  padding-right: 5px;
+  padding-top: 2px;
+}
+
+#start-menu {
+	position: absolute;
+	background-color: white;
+  left: 0;
+  bottom: 59px;
+	width: 300px;
+	height: 442.5px;
+	box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+	float: left;
+  z-index: 100;
+  display: none;
+}
+
+.start-menu-header {
+  position: relative;
+  color: white;
+  text-align: left;
+  width: 94%;
+  height: 50px;
+  padding-top: 20px;
+  padding-left: 20px;
+  box-shadow: 3px 2px 3px #7fbce8 inset;
+  background: linear-gradient(to bottom, #0c8dea 0%, #245edb 100%);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.avatar {
+  display: inline-block;
+  width: 35px;
+  border: 1px solid white;
+  border-radius: 5px;
+  float: left;
+}
+
+.start-menu-header-title {
+  display: inline-block;
+  padding-left: 10px;
+  padding-top: 8px;
+  font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+  font-size: 25px;
+}
+
+.start-menu-body {
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 0;
+  width: 94%;
+  text-align: left;
+}
+
+.start-menu-body-title {
+  display: inline-block;
+  padding: 10px;
+  font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+  font-size: 18px;
+}
+
+.start-menu-body:hover {
+  background-color:rgb(61,100,189);
+  color:white;
+}
+
+a:link {
+  color: black;
+  text-decoration: none;
+}
+
+a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+a:active {
+  color: black;
+  text-decoration: none;
+}
+
+.start-menu-footer {
+  height: 43px;
+  box-shadow: 3px 2px 3px #7fbce8 inset;
+  background: linear-gradient(to bottom, #0c8dea 0%, #245edb 100%);
+}
+
+.turnoff {
+  width: 100%;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+hr {
+  width: 80%;
+}
+
+.clock {
+	position: absolute;
+  padding: 0 15px;
+  bottom: 12px;
+	text-align: center;
+	color: white;
+	right: 0;
+	width: 60px;
+	z-index: 2;
+}
+
+/* FOOTER BAR SECTION  - END */
+
+
+/* MOBILE - START */
+
+
+/* @media only screen and (max-width: 1235px) {
+    body {
+        background-size: auto;
+    }
+} */
+
+/* MOBILE - END */
+
+
+#type1folder:hover {
+  -ms-transform: scale(5); /* IE 9 */
+  -webkit-transform: scale(5); /* Safari 3-8 */
+  transform: scale(5);
+}
+
