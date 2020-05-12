@@ -48,6 +48,7 @@ body {
 }
 
 #notepad-about {
+  position: absolute;
   clear: left;
   width: 6%;
   padding: 20px 20px;
