@@ -76,11 +76,11 @@ $(document).ready(function(){
     });
 });
 
-// $(document).ready(function(){
-//     $("#notepad-about").click(function(){
-//         $(".modal-notepad-about").toggle();
-//     });
-//   });
+$(document).ready(function(){
+    $("#notepad-about").click(function(){
+        $(".modal-notepad-about").toggle();
+    });
+  });
   
 // FOLDERS
 
