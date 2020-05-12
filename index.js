@@ -87,6 +87,10 @@ $(document).ready(function(){
   
 // FOLDERS
 
+$( function() {
+  $( "#notepad-about" ).draggable();
+} );
+
 
 // CLOCK
 
