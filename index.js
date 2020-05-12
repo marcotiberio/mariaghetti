@@ -78,14 +78,12 @@ $(document).ready(function(){
 
 $(document).ready(function(){
     $("#notepad-about").click(function(){
-        $(".modal-notepad-about").show('fast', 'swing');
-    });
-    $(".modal-close-notepad-about").click(function(){
-        $(".modal-notepad-about").hide(0);
+        $(".modal-notepad-about").toggle('fast', 'swing');
     });
   });
   
 // FOLDERS
+
 
 
 // CLOCK
